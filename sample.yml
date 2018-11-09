@@ -1,0 +1,8 @@
+- name: Install Oracle Java
+  hosts: web01
+  become: true
+  tasks:
+    - name: Install zip 
+      yum:
+        name: zip
+        state: present
